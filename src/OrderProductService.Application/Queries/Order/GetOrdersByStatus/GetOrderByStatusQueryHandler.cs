@@ -1,7 +1,7 @@
 using ErrorOr;
 using MediatR;
 using OrderProductService.Application.Persistence;
-using OrderProductService.Application.Responses.Order;
+using OrderProductService.Application.Responses.Orders;
 
 namespace OrderProductService.Application.Queries.Order.GetOrdersByStatus;
 

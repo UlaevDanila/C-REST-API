@@ -1,5 +1,5 @@
-using OrderProductService.Application.Responses.Order;
-using OrderProductService.Application.Responses.Product;
+using OrderProductService.Application.Responses.Orders;
+using OrderProductService.Application.Responses.Products;
 using OrderProductService.Domain.Entities.Orders;
 using OrderProductService.Domain.Entities.Products;
 

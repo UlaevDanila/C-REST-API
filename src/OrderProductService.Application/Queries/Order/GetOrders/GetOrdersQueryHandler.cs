@@ -2,8 +2,8 @@ using ErrorOr;
 using MediatR;
 using OrderProductService.Application.Persistence;
 using OrderProductService.Application.Queries.Product.GetProductById;
-using OrderProductService.Application.Responses.Category;
-using OrderProductService.Application.Responses.Order;
+using OrderProductService.Application.Responses.Categories;
+using OrderProductService.Application.Responses.Orders;
 
 namespace OrderProductService.Application.Queries.Order.GetOrders;
 

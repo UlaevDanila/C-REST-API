@@ -1,6 +1,6 @@
 using ErrorOr;
 using MediatR;
-using OrderProductService.Application.Responses.Category;
+using OrderProductService.Application.Responses.Categories;
 
 namespace OrderProductService.Application.Queries.Category.GetCategoryById;
 

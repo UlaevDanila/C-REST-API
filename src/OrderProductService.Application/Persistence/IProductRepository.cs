@@ -1,4 +1,4 @@
-using OrderProductService.Application.Responses.Product;
+using OrderProductService.Application.Responses.Products;
 
 namespace OrderProductService.Application.Persistence;
 
@@ -14,7 +14,7 @@ public interface IProductRepository
 
     public Task UpdateAsync(ProductResponseDto product, CancellationToken cancellationToken);
 
-    public Task DeleteAsync(ProductResponseDto product, CancellationToken cancellationToken);
+    public Task DeleteAsync(Product product, CancellationToken cancellationToken);
 
     public Task SaveChangesAsync(CancellationToken cancellationToken);
 }

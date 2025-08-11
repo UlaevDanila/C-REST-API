@@ -1,4 +1,4 @@
-namespace OrderProductService.Application.Responses.Product;
+namespace OrderProductService.Application.Responses.Products;
 
 public record ProductResponseDto(
     string Name,
