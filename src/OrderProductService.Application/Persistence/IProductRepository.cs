@@ -1,4 +1,5 @@
 using OrderProductService.Application.Responses.Products;
+using OrderProductService.Domain.Entities.Products;
 
 namespace OrderProductService.Application.Persistence;
 

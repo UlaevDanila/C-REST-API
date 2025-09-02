@@ -17,7 +17,7 @@ public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryComman
     public async Task<ErrorOr<CategoryResponseDto>> Handle(CreateCategoryCommand command,
         CancellationToken cancellationToken)
     {
-        var category = new Category(command.Name, command.Description);
+        var category = new Domain.Entities.Categories.Category(command.Name, command.Description);
 
         await _categoryRepository.CreateAsync(category, cancellationToken);
 
