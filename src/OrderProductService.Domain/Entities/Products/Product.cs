@@ -2,7 +2,7 @@ using OrderProductService.Domain.Common;
 
 namespace OrderProductService.Domain.Entities.Products;
 
-public class Product : Entity
+public class Product : Entity<Guid>
 {
     public string Name { get; init; } = null!;
 

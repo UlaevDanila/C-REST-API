@@ -3,7 +3,7 @@ using OrderProductService.Domain.Entities.Products;
 
 namespace OrderProductService.Domain.Entities.Orders;
 
-public class OrderItem : Entity
+public class OrderItem : Entity<Guid>
 {
     public Order Order { get; init; } = null!;
 

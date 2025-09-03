@@ -1,6 +1,5 @@
 using ErrorOr;
 using MediatR;
-using OrderProductService.Application.Commands.Category.CreateCategory;
 using OrderProductService.Application.Persistence;
 using OrderProductService.Application.Responses.Products;
 

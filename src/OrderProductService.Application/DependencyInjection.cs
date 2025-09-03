@@ -1,9 +1,6 @@
-using OrderProductService.Application.Common.Behaviours;
-
 using FluentValidation;
-
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-
 using OrderProductService.Application.Common.Behaviours;
 
 namespace OrderProductService.Application;
@@ -15,7 +12,10 @@ public static class DependencyInjection
         services.AddMediatR(options =>
         {
             options.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
-            options.AddOpenBehavior(typeof(ValidationBehavior<,>));
+            
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(ValidationBehavior<,>));
         });
 
         services.AddValidatorsFromAssemblyContaining(typeof(DependencyInjection));

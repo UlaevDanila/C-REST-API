@@ -2,7 +2,7 @@ using OrderProductService.Domain.Common;
 
 namespace OrderProductService.Domain.Entities.Orders;
 
-public class Order : Entity
+public class Order : Entity<Guid>
 {
     public string CustomerName { get; init; } = null!;
 

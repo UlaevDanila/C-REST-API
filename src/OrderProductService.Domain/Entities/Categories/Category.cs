@@ -3,7 +3,7 @@ using OrderProductService.Domain.Entities.Products;
 
 namespace OrderProductService.Domain.Entities.Categories;
 
-public class Category : Entity
+public class Category : Entity<Guid>
 {
     public string Name { get; init; } = null!;
 
@@ -17,7 +17,7 @@ public class Category : Entity
         Description = description;
     }
     
-    #pragma warning disable CS8618
+    #pragma warning disable CS8618 
     private Category() {}
     #pragma warning disable CS8618
 }
